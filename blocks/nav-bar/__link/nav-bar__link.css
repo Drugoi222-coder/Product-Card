@@ -1,0 +1,27 @@
+.nav-bar__link {
+    text-decoration: none;
+    color: var(--extra-text-color);
+    position: relative;
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+.nav-bar__link:hover {
+    color: var(--main-text-color);
+}
+
+.nav-bar__link::after {
+    content: "";
+    transition: all 0.2s linear;
+    position: absolute;
+    top: 57px;
+    right: 0;
+    width: inherit;
+    height: 3px;
+    opacity: 0;
+    background-color: var(--extra-color);
+}
+
+.nav-bar__link:hover::after {
+    opacity: 1;
+}

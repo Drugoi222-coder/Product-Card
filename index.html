@@ -11,80 +11,86 @@
 
 <body class="page">
     <header class="header">
-        <h2 class="header__title">sneakers</h2>
-        <nav class="nav-bar header__nav-bar">
-            <ul class="nav-bar__list">
-                <li class="nav-bar__item">
-                    <a class="nav-bar__link">Collections</a>
-                </li>
-                <li class="nav-bar__item">
-                    <a class="nav-bar__link">Men</a>
-                </li>
-                <li class="nav-bar__item">
-                    <a class="nav-bar__link">Women</a>
-                </li>
-                <li class="nav-bar__item">
-                    <a class="nav-bar__link">About</a>
-                </li>
-                <li class="nav-bar__item">
-                    <a class="nav-bar__link">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__nav">
+            <h2 class="header__title">
+                <a class="header__link" href="">sneakers</a>
+            </h2>
+            <nav class="nav-bar header__nav-bar">
+                <ul class="nav-bar__list">
+                    <li class="nav-bar__item">
+                        <a href="" class="nav-bar__link">Collections</a>
+                    </li>
+                    <li class="nav-bar__item">
+                        <a href="" class="nav-bar__link">Men</a>
+                    </li>
+                    <li class="nav-bar__item">
+                        <a href="" class="nav-bar__link nav-bar__link_type_active">Women</a>
+                    </li>
+                    <li class="nav-bar__item">
+                        <a href="" class="nav-bar__link">About</a>
+                    </li>
+                    <li class="nav-bar__item">
+                        <a href="" class="nav-bar__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div class="header__account">
             <div class="header__cart">
-                <img class="header__img-cart" src="" alt="image of cart">
+                <img class="header__img-cart" src="images/header/icon-cart.svg" alt="image of cart">
             </div>
             <div class="header__person">
-                <img class="header__img-person" src="" alt="image of person">
+                <img class="header__img-person" src="images/header/image-avatar.png" alt="image of person">
             </div>
         </div>
     </header>
     <main class="main">
-        <div class="gallery main__gallery">
-            <div class="gallery__general">
-                <img class="gallery__photo" src="" alt="">
-            </div>
-            <div class="gallery__slides">
-                <div class="gallery__min-img">
-                    <img class="gallery__thumb" src="" alt="">
+        <div class="container">
+            <div class="gallery main__gallery">
+                <div class="gallery__general">
+                    <img class="gallery__photo" src="" alt="">
                 </div>
-                <div class="gallery__min-img">
-                    <img class="gallery__thumb" src="" alt="">
-                </div>
-                <div class="gallery__min-img">
-                    <img class="gallery__thumb" src="" alt="">
-                </div>
-                <div class="gallery__min-img">
-                    <img class="gallery__thumb" src="" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="content main__content">
-            <div class="content__text">
-                <h3 class="content__company">sneaker company</h3>
-                <h1 class="content__title">Fall Limited Edition Sneakers</h1>
-                <p class="content__description">
-                    These low-profile sneakers are your perfect casual wear
-                    companion. Featuring a durable rubber outer sole, they’ll
-                    withstand everything the weather can offer.
-                </p>
-                <div class="price content__price">
-                    <p class="price__cost">$125.00</p>
-                    <p class="price__sale">50%</p>
-                    <p class="price__start-cost">$250.00</p>
+                <div class="gallery__slides">
+                    <div class="gallery__min-img">
+                        <img class="gallery__thumb" src="" alt="">
+                    </div>
+                    <div class="gallery__min-img">
+                        <img class="gallery__thumb" src="" alt="">
+                    </div>
+                    <div class="gallery__min-img">
+                        <img class="gallery__thumb" src="" alt="">
+                    </div>
+                    <div class="gallery__min-img">
+                        <img class="gallery__thumb" src="" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="add-to-cart content__add-to-cart">
-                <div class="add-to-cart__count">
-                    <img class="add-to-cart__minus" src="" alt="">
-                    <p class="add-to-cart__score">0</p>
-                    <img class="add-to-cart__plus" src="" alt="">
+            <div class="content main__content">
+                <div class="content__text">
+                    <h3 class="content__company">sneaker company</h3>
+                    <h1 class="content__title">Fall Limited Edition Sneakers</h1>
+                    <p class="content__description">
+                        These low-profile sneakers are your perfect casual wear
+                        companion. Featuring a durable rubber outer sole, they’ll
+                        withstand everything the weather can offer.
+                    </p>
+                    <div class="price content__price">
+                        <p class="price__cost">$125.00</p>
+                        <p class="price__sale">50%</p>
+                        <p class="price__start-cost">$250.00</p>
+                    </div>
                 </div>
-                <button class="add-to-cart__add-btn">
-                    <img class="add-to-cart__img-cart" src="" alt="">
-                    <p class="add-to-cart__btn-text">Add to cart</p>
-                </button>
+                <div class="add-to-cart content__add-to-cart">
+                    <div class="add-to-cart__count">
+                        <img class="add-to-cart__minus" src="" alt="">
+                        <p class="add-to-cart__score">0</p>
+                        <img class="add-to-cart__plus" src="" alt="">
+                    </div>
+                    <button class="add-to-cart__add-btn">
+                        <img class="add-to-cart__img-cart" src="" alt="">
+                        <p class="add-to-cart__btn-text">Add to cart</p>
+                    </button>
+                </div>
             </div>
         </div>
     </main>

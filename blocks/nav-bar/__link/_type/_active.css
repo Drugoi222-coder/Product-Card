@@ -1,0 +1,14 @@
+.nav-bar__link_type_active {
+    color: var(--main-text-color);
+}
+
+.nav-bar__link_type_active::after {
+    content: "";
+    opacity: 1;
+    position: absolute;
+    top: 57px;
+    right: 0;
+    width: inherit;
+    height: 3px;
+    background-color: var(--extra-color);
+}

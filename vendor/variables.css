@@ -1,3 +1,7 @@
-:root{
-  --variables : 10px; /* Переменная : свойтва */ 
+:root {
+    --main-text-color: black;
+    --extra-text-color: #68707D;
+    --extra-color: #FF7D1A;
+    --extra-help-color: #FFEDE0;
+    --bg-extra-color: #F7F8FD;
 }

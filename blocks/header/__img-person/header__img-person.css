@@ -1,0 +1,5 @@
+.header__img-person {
+    border-radius: 100%;
+    width: 50px;
+    border: 1px solid var(--extra-color);
+}

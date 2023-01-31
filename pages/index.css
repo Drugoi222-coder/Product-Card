@@ -1,12 +1,59 @@
 @import '../vendor/normalize.css';
 @import '../vendor/variables.css';
 @import '../vendor/fonts/fonts.css';
-/* Blocks */ 
+/* Blocks */
 @import '../blocks/page/page.css';
-/* Header */ 
+/* Header */
 @import '../blocks/header/header.css';
 @import '../blocks/header/__title/header__title.css';
+@import '../blocks/header/__account/header__account.css';
+@import '../blocks/header/__cart/header__cart.css';
+@import '../blocks/header/__img-cart/header__img-cart.css';
+@import '../blocks/header/__img-person/header__img-person.css';
+@import '../blocks/header/__nav-bar/header__nav-bar.css';
+@import '../blocks/header/__person/header__person.css';
+@import '../blocks/header/__link/header__link.css';
+@import '../blocks/header/__nav/header__nav.css';
 /* Main */
 @import '../blocks/main/main.css';
+@import '../blocks/main/__content/main__content.css';
+@import '../blocks/main/__gallery/main__gallery.css';
+/* Container */
+@import '../blocks/container/container.css';
+/* Nav-bar */
+@import '../blocks/nav-bar/nav-bar.css';
+@import '../blocks/nav-bar/__item/nav-bar__item.css';
+@import '../blocks/nav-bar/__link/nav-bar__link.css';
+@import '../blocks/nav-bar/__list/nav-bar__list.css';
+@import '../blocks/nav-bar/__link/_type/_active.css';
+/* Gallery */
+@import '../blocks/gallery/gallery.css';
+@import '../blocks/gallery/__general/gallery__general.css';
+@import '../blocks/gallery/__min-img/gallery__min-img.css';
+@import '../blocks/gallery/__photo/gallery__photo.css';
+@import '../blocks/gallery/__slides/gallery__slides.css';
+@import '../blocks/gallery/__thumb/gallery__thumb.css';
+/* Content */
+@import '../blocks/content/content.css';
+@import '../blocks/content/__add-to-cart/content__add-to-cart.css';
+@import '../blocks/content/__company/content__company.css';
+@import '../blocks/content/__description/content__description.css';
+@import '../blocks/content/__price/content__price.css';
+@import '../blocks/content/__text/content__text.css';
+@import '../blocks/content/__title/content__title.css';
+/* Price */
+@import '../blocks/price/price.css';
+@import '../blocks/price/__cost/price__cost.css';
+@import '../blocks/price/__sale/price__sale.css';
+@import '../blocks/price/__start-cost/price__start-cost.css';
+/* Add-to-cart */
+@import '../blocks/add-to-cart/add-to-cart.css';
+@import '../blocks/add-to-cart/__add-btn/add-to-cart__add-btn.css';
+@import '../blocks/add-to-cart/__btn-text/add-to-cart__btn-text.css';
+@import '../blocks/add-to-cart/__count/add-to-cart__count.css';
+@import '../blocks/add-to-cart/__img-cart/add-to-cart__img-cart.css';
+@import '../blocks/add-to-cart/__minus/add-to-cart__minus.css';
+@import '../blocks/add-to-cart/__plus/add-to-cart__plus.css';
+@import '../blocks/add-to-cart/__score/add-to-cart__score.css';
 /* Footer */
 @import '../blocks/footer/footer.css';
