@@ -1,16 +1,28 @@
-# Проект: ...
+# Проект: Карточка товара в интернет-магазине
 
-Цель проекта : ... 
+Цель проекта: Продемонстрировать навыки вёрстки и программирования
 
 ## Технологии, которые использовались
 
-...
+### HTML
+1. Семантическая вёрстка
+2. Адаптация макета под различные устройства
+3. Open Graph теги
+
+### CSS
+1. Методология БЭМ
+2. CSS Flexbox
+3. CSS Grid
+4. Адаптивная вёрстка
+5. Медиазапросы
+
+### JS
 
 ### Посмотреть макет можно по ссылке ↓
 
-[«Макет Проекта»](https://www.figma.com/file/cGiStCX61OSwYlqHgCUA6d/Hello-World?node-id=0%3A1)
+[«Макет Проекта»](https://www.figma.com/file/tBUKbH2UtMmGhfxX8hKxCY/E-commerce-product-page-(Community)?node-id=0%3A1&t=sE3j4EUdPHDhb3ky-0)
 
 
 ### Посмотреть сайт можно по ссылке ↓
 
-[«Сам Проект»](https://alexparanoir.github.io/start-kit/)
+[«Сам Проект»](drugoi222-coder.github.io/Product-Card/)
