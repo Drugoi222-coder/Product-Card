@@ -25,4 +25,4 @@
 
 ### Посмотреть сайт можно по ссылке ↓
 
-[«Сам Проект»](drugoi222-coder.github.io/Product-Card/)
+[«Сам Проект»](https://drugoi222-coder.github.io/Product-Card)
