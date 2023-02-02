@@ -1,4 +1,11 @@
-.price__sale
-{
-    
+.price__sale {
+    border-radius: 5px;
+    height: 27px;
+    width: 51px;
+    background-color: var(--extra-help-color);
+    margin: 0;
+    text-align: center;
+    line-height: 26px;
+    color: var(--extra-color);
+    font-weight: 700;
 }

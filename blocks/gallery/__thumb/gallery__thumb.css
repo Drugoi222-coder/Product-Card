@@ -1,4 +1,7 @@
-.gallery__thumb
-{
-    
+.gallery__thumb {
+    object-fit: contain;
+    width: inherit;
+    cursor: pointer;
+    height: inherit;
+    border-radius: inherit;
 }

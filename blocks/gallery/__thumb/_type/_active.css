@@ -1,0 +1,5 @@
+.gallery__thumb_type_active {
+    opacity: 0.3;
+    width: 88px;
+    border-radius: 0px;
+}

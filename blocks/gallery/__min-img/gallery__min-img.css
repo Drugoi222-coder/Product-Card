@@ -1,4 +1,5 @@
-.gallery__min-img
-{
-    
+.gallery__min-img {
+    border-radius: 15px;
+    width: 88px;
+    height: 88px;
 }

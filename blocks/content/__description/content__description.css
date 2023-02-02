@@ -1,4 +1,8 @@
-.content__description
-{
-    
+.content__description {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--extra-text-color);
+    margin: 0;
+    margin-top: 35px;
 }

@@ -1,0 +1,7 @@
+.main__wrap {
+    display: flex;
+    padding-top: 91px;
+    justify-content: space-between;
+    width: 995px;
+    margin: 0 auto;
+}

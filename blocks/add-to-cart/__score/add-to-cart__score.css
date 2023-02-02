@@ -1,4 +1,7 @@
-.add-to-cart__score
-{
-    
+.add-to-cart__score {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+    margin: 0;
 }

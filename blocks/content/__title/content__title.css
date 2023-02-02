@@ -1,4 +1,7 @@
-.content__title
-{
-    
+.content__title {
+    font-weight: 700;
+    font-size: 44px;
+    margin: 0;
+    line-height: 48px;
+    margin-top: 19px;
 }

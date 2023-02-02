@@ -1,6 +1,6 @@
-.gallery__slides {
+.price__real {
     display: flex;
-    width: inherit;
+    width: 173px;
     justify-content: space-between;
     margin-top: 30px;
 }

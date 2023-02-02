@@ -1,0 +1,4 @@
+.gallery__min-img_type_active {
+    border: 2px solid var(--extra-color);
+    overflow: hidden;
+}

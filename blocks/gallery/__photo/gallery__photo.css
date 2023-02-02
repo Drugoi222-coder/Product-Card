@@ -1,4 +1,8 @@
-.gallery__photo
-{
-    
+.gallery__photo {
+    object-fit: contain;
+    width: 445px;
+    height: 445px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgba(214, 213, 213, 0.668);
 }

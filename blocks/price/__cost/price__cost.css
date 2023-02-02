@@ -1,4 +1,6 @@
-.price__cost
-{
-    
+.price__cost {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0;
 }

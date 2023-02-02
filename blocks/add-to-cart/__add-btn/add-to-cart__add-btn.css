@@ -1,4 +1,12 @@
-.add-to-cart__add-btn
-{
-    
+.add-to-cart__add-btn {
+    width: 273px;
+    height: 54px;
+    border-radius: 10px;
+    background-color: var(--extra-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 15px;
+    box-shadow: 0px 8px 10px var(--extra-help-color);
 }

@@ -1,4 +1,10 @@
-.add-to-cart__count
-{
-    
+.add-to-cart__count {
+    display: flex;
+    border-radius: 10px;
+    width: 157px;
+    align-items: center;
+    padding: 0 16px;
+    height: 54px;
+    justify-content: space-between;
+    background-color: var(--bg-extra-color);
 }

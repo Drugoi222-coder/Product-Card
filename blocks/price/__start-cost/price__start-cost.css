@@ -1,4 +1,8 @@
-.price__start-cost
-{
-    
+.price__start-cost {
+    text-decoration: line-through;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 9px;
+    font-size: 16px;
+    line-height: 26px;
 }
