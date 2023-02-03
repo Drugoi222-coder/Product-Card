@@ -60,5 +60,11 @@
 @import '../blocks/add-to-cart/__plus/add-to-cart__plus.css';
 @import '../blocks/add-to-cart/__score/add-to-cart__score.css';
 @import '../blocks/add-to-cart/__img/add-to-cart__img.css';
+/* Goods */
+@import '../blocks/goods/goods.css';
+@import '../blocks/goods/__cart/goods__cart.css';
+@import '../blocks/goods/__list/goods__list.css';
+@import '../blocks/goods/_type/_active/goods_type_active.css';
+@import '../blocks/goods/_type/_visible/goods_type_visible.css';
 /* Footer */
 @import '../blocks/footer/footer.css';

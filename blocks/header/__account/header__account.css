@@ -3,4 +3,5 @@
     align-items: center;
     justify-content: space-between;
     width: 115px;
+    position: relative;
 }
