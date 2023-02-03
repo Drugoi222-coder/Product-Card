@@ -1,6 +1,4 @@
 .goods__price {
     display: flex;
     margin-top: 6px;
-    width: 146px;
-    justify-content: space-between;
 }
