@@ -14,6 +14,7 @@
 @import '../blocks/header/__person/header__person.css';
 @import '../blocks/header/__link/header__link.css';
 @import '../blocks/header/__nav/header__nav.css';
+@import '../blocks/header/__cart-score/header__cart-score.css';
 /* Main */
 @import '../blocks/main/main.css';
 @import '../blocks/main/__content/main__content.css';
@@ -66,5 +67,16 @@
 @import '../blocks/goods/__list/goods__list.css';
 @import '../blocks/goods/_type/_active/goods_type_active.css';
 @import '../blocks/goods/_type/_visible/goods_type_visible.css';
+@import '../blocks/goods/__empty/goods__empty.css';
+@import '../blocks/goods/__bin/goods__bin.css';
+@import '../blocks/goods/__bin-img/goods__bin-img.css';
+@import '../blocks/goods/__final-cost/goods__final-cost.css';
+@import '../blocks/goods/__start-cost/goods__start-cost.css';
+@import '../blocks/goods/__price/goods__price.css';
+@import '../blocks/goods/__title/goods__title.css';
+@import '../blocks/goods/__text/goods__text.css';
+@import '../blocks/goods/__picture/goods__picture.css';
+@import '../blocks/goods/__img/goods__img.css';
+@import '../blocks/goods/__item/goods__item.css';
 /* Footer */
 @import '../blocks/footer/footer.css';

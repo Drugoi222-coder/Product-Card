@@ -1,0 +1,17 @@
+.header__cart-score {
+    position: absolute;
+    height: 12px;
+    top: -6px;
+    right: -7px;
+    border-radius: 9px;
+    background-color: var(--extra-color);
+    font-family: "KumbhSans";
+    display: none;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: 0 7px;
+    padding-top: 1px;
+    line-height: 12px;
+}

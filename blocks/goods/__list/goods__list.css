@@ -1,6 +1,3 @@
 .goods__list {
-    color: var(--extra-text-color);
-    text-align: center;
-    margin-top: 83px;
-    line-height: 11px;
+    padding: 24px;
 }

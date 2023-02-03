@@ -1,0 +1,7 @@
+.goods__empty {
+    color: var(--extra-text-color);
+    text-align: center;
+    margin: 0;
+    padding: 59px 0 70px 0;
+    line-height: 11px;
+}
