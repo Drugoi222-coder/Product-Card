@@ -9,6 +9,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const gallerySlides = document.querySelectorAll(".gallery__slides");
     const pageSlider = document.querySelector(".gallery__page-slider");
     const mainSlider = document.querySelector(".gallery__main-slider");
+    const nextArrow = document.querySelector(".gallery__arrow-next");
+    const prevArrow = document.querySelector(".gallery__arrow-prev");
     // +1 к счётчику товаров по нажатию
     plus.addEventListener("click", () => {
         let scoreText = +score.value;
@@ -137,13 +139,16 @@ window.addEventListener("DOMContentLoaded", () => {
         bin.addEventListener("click", removeGoodItem);
         addCart();
     });
-    // Галерея thubmnails ---------------------------------------------------------------
+    // Галерея фоток ---------------------------------------------------------------
+    // lastActiveThumbnail - объект, с информацией о последней фотографии,
+    // на которую нажал пользователь. Хранит индекс этой фотографии в карусели
+    // (общем массиве фотографий галереи) и путь к этой фотографиий
     const lastActiveThumbnail =
     {
         src: "http://127.0.0.1:5500/images/gallery/image-product-1.jpg",
         index: 0
     };
-    // Выключение других активных thumbnail
+    // Выключение классов активности у других фоток
     function offActiveThumbnails(arr,target,...activeClasses) {
         arr.forEach((i,index) => {
             if (i.children[0] != target) {
@@ -155,7 +160,7 @@ window.addEventListener("DOMContentLoaded", () => {
         });
         return lastActiveThumbnail;
     }
-    // Включение активного thumbnail
+    // Включение классов активности у нажатой фотки
     function onActiveThumbnail(mainPhoto,target,...activeClasses) {
         mainPhoto.src = target.src;
         target.parentElement.classList.add(activeClasses[0]);
@@ -163,48 +168,76 @@ window.addEventListener("DOMContentLoaded", () => {
         lastActiveThumbnail.src = mainPhoto.src;
         return lastActiveThumbnail;
     }
-    // Передача данных от одного слайдера другому
-    function transferData(slider) {
-        const galleryPhoto = slider.querySelector(".gallery__photo");
-        const gallerySlides = Array.from(slider.querySelector(".gallery__slides").children);
-        const lastTarget = gallerySlides[lastActiveThumbnail.index].children[0];
-        galleryPhoto.src = lastActiveThumbnail.src;
+    function turnOnNewThumbnail(target,mainPhoto,carousel) {
         onActiveThumbnail(
-            galleryPhoto,
-            lastTarget,
+            mainPhoto,
+            target,
             "gallery__min-img_type_active",
             "gallery__thumb_type_active"
         );
         offActiveThumbnails(
-            gallerySlides,
-            lastTarget,
+            carousel,
+            target,
             "gallery__min-img_type_active",
             "gallery__thumb_type_active"
         );
     }
+    // Валидация индекса изображения в слайдере
+    //     Если next > 1, значит, нажата стрелка "дальше" и индекс
+    // должен увеличиться, если индекс выходит за пределы
+    // массива он выставляется в 0.
+    //     Если next == 1, значит, нажата стрелка "назад", и индекс
+    // должен уменьшиться, если индекс выходит за пределы
+    // массива он выставляется в "значение длины массива минус один"
+    //     Если next не выставлен, то он принимает значение по
+    // умолочанию (это 0) и принимает значение, которое находится
+    // в lastActiveThumbnail.index;
+    function validateIndexInSlider(arr,next) {
+        let realIndex;
+        if (!arr[lastActiveThumbnail.index+1] && next > 1) {
+            realIndex = 0;
+        } else if (!arr[lastActiveThumbnail.index-1] && next == 1 ) {
+            realIndex = arr.length - 1;
+        } else if (arr[lastActiveThumbnail.index+1] && next > 1) {
+            realIndex = lastActiveThumbnail.index + 1;
+        } else if (arr[lastActiveThumbnail.index-1] && next == 1) {
+            realIndex = lastActiveThumbnail.index - 1;
+        } else {
+            realIndex = lastActiveThumbnail.index;
+        }
+        return realIndex;
+    }
+    // Передача данных от одного слайдера другому
+    function transferData(slider, next = 0) {
+        const galleryPhoto = slider.querySelector(".gallery__photo");
+        const gallerySlides = Array.from(slider.querySelector(".gallery__slides").children);
+        const thumbnail = gallerySlides[validateIndexInSlider(gallerySlides,next)].children[0];
+        galleryPhoto.src = lastActiveThumbnail.src;
+        turnOnNewThumbnail(
+            thumbnail,
+            galleryPhoto,
+            gallerySlides
+        );
+    }
+    // Для каждой карусели с фотками на странице добавляем
+    // обработчик события клика, при срабатывании которого
+    // добавляются классы активности определённым фоткам
+    // и выводится главное фото соответственно.
     gallerySlides.forEach(item => {
         item.addEventListener("click", (e) => {
+            // Получение всей галереи, вместе с главным фото
             const slider = item.parentElement;
             // Получение главного фото слайдера
             const galleryPhoto = slider.querySelector(".gallery__photo");
+            // Формирование массива из фоток карусели
             const galleryChildren = Array.from(e.currentTarget.children);
-            // Включение активного thumbnail
+            // Включение активной фотки
             if (e.target.classList.contains("gallery__thumb")){
-                onActiveThumbnail(
-                    galleryPhoto,
-                    e.target,
-                    "gallery__min-img_type_active",
-                    "gallery__thumb_type_active"
-                );
-                offActiveThumbnails(
-                    galleryChildren,
-                    e.target,
-                    "gallery__min-img_type_active",
-                    "gallery__thumb_type_active"
-                );
+                turnOnNewThumbnail(e.target,galleryPhoto,galleryChildren);
             }
         });
     });
+    // Создание оверлэя со слайдером и его закрытие с передачей данных в начальный слайдер на странице
     pageSlider.addEventListener("click", (e) => {
         if (e.target.classList.contains("gallery__photo")) {
             mainSlider.style.display = "block";
@@ -215,5 +248,13 @@ window.addEventListener("DOMContentLoaded", () => {
                 transferData(pageSlider);
             });
         }
+    });
+    // Переключение на следующую фотку при клике на стрелку
+    nextArrow.addEventListener("click", () => {
+        transferData(mainSlider,2);
+    });
+    // Переключение на предыдущую фотку при клике на стрелку
+    prevArrow.addEventListener("click", () => {
+        transferData(mainSlider,1);
     });
 });
