@@ -1,0 +1,4 @@
+.gallery__arrow-prev-img {
+    margin-top: 18px;
+    transform: rotate(180deg);
+}

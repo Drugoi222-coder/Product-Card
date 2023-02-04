@@ -1,6 +1,7 @@
 .gallery__slides {
     display: flex;
-    width: inherit;
+    width: 439px;
+    margin: 0 auto;
     justify-content: space-between;
-    margin-top: 30px;
+    flex-wrap: wrap;
 }

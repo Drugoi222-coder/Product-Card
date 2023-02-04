@@ -1,0 +1,10 @@
+.gallery__main-slider {
+    background: hsla(0, 0%, 0%, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 132px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}

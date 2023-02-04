@@ -1,5 +1,6 @@
 .gallery__thumb_type_active {
-    opacity: 0.3;
+    opacity: 0.5;
     width: 88px;
     border-radius: 0px;
+    background: white;
 }

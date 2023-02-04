@@ -37,6 +37,16 @@
 @import '../blocks/gallery/__thumb/gallery__thumb.css';
 @import '../blocks/gallery/__thumb/_type/_active.css';
 @import '../blocks/gallery/__min-img/_type/_active.css';
+@import '../blocks/gallery/__main-slider/gallery__main-slider.css';
+@import '../blocks/gallery/__cross/gallery__cross.css';
+@import '../blocks/gallery/__cross-img/gallery__cross-img.css';
+@import '../blocks/gallery/__arrow-next-img/gallery__arrow-next-img.css';
+@import '../blocks/gallery/__arrow-prev-img/gallery__arrow-prev-img.css';
+@import '../blocks/gallery/__arrow-next/gallery__arrow-next.css';
+@import '../blocks/gallery/__arrow-prev/gallery__arrow-prev.css';
+@import '../blocks/gallery/__page-slider/gallery__page-slider.css';
+/* Slider */
+@import '../blocks/slider/slider.css';
 /* Content */
 @import '../blocks/content/content.css';
 @import '../blocks/content/__add-to-cart/content__add-to-cart.css';

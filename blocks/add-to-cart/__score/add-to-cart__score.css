@@ -4,4 +4,9 @@
     line-height: 20px;
     height: 20px;
     margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--bg-help-color);
+    border: none;
+    outline: none;
 }

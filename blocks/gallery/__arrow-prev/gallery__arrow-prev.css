@@ -1,0 +1,11 @@
+.gallery__arrow-prev {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 258px;
+    left: -28px;
+    cursor: pointer;
+    background: white;
+}

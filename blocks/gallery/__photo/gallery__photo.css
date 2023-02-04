@@ -1,8 +1,14 @@
 .gallery__photo {
     object-fit: contain;
-    width: 445px;
+    width: inherit;
     height: 445px;
+    width: 445px;
     cursor: pointer;
     border-radius: 15px;
-    border: 1px solid rgba(214, 213, 213, 0.668);
+}
+
+.gallery__main-slider .gallery__photo {
+    cursor: auto;
+    width: 550px;
+    height: 550px;
 }

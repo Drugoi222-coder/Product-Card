@@ -1,0 +1,11 @@
+.gallery__arrow-next {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    background: white;
+    text-align: center;
+    bottom: 258px;
+    right: -28px;
+    cursor: pointer;
+    position: absolute;
+}

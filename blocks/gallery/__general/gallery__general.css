@@ -1,4 +1,10 @@
-.gallery__general
-{
-    
+.gallery__general {
+    width: 445px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gallery__main-slider .gallery__general {
+    width: 550px;
+    height: 550px;
 }

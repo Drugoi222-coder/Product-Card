@@ -1,0 +1,6 @@
+.gallery__cross {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    cursor: pointer;
+}
